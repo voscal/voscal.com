@@ -1,0 +1,16 @@
+body {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  background: #ffff;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  margin-left: -250px;
+  margin-top: -250px;
+}
+
+img {
+  width: 100%;
+  padding: 10px;
+}
