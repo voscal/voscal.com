@@ -14,3 +14,9 @@ img {
   width: 100%;
   padding: 10px;
 }
+
+h1 {
+  color: #ffff;
+  font-size: 0%;
+  padding: 0%;
+}
