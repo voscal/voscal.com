@@ -1,0 +1,6 @@
+{
+  "title": "BABAGABOOSH",
+  "imagePath": "Images/BABAGABOOSH.png",
+  "content": "Babagaboosh GUI is an easy-to-use implementation of Doug Doug's Babagaboosh project, built using Godot Engine 4.2.1 and C#. This project aims to provide a user-friendly interface for all users. This is one of my longest-running projects, it's fully open-source and has an intuitive ui inspired by Mario Maker! I've always wondered how Mario Maker can make tedious tasks like filling tiles into a giant square so fun. Whenever you use it, it feels like you're playing with some toys and having fun. A large part of this reason is the UI in the editor. It uses a strong bright yellow color as its primary color. If you know a bit about color theory, you will know that yellow is commonly associated with fun and happiness. Many design changes add to the feeling of it being a toy. Normal icons so people can identify what un do is? Nope, that's the undo dog. This makes it feel lively and full of personality! Taking all this into account, the UI in Babagaboosh GUI also uses a bright yellow color as an outlining color for the same reasons, all the editor icons are different characters, and there's an explosion when changing characters and fancy music when writing a description of a character. You can check out the project on GitHub here:"
+
+}
