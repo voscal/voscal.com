@@ -1,5 +1,5 @@
 {
   "title": "Asteroids Clone",
-  "imagePath": "images/astroids.png",
+  "imagePath": "Images/astroids.png",
   "content": "I made this project when trying to learn godot for the first time. It was coded using GD Script, wich is godot's own custom language. thankfuly it verysimmilar to python, so it wasint much of a learning curve to wrap my head around the syntaxe."
 }
