@@ -11,6 +11,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <style>
       /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
       .row.content {
@@ -62,6 +66,64 @@
         transform: translateY(-10px);
       }
 
+      .vertical-center {
+        position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: "Source Code Pro", monospace;
+
+}
+   
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.fadeInUp-animation {
+  animation: 1.5s fadeInUp;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.fadeInLeft-animation {
+  animation: 1.5s fadeInLeft;
+}
+
+
+@keyframes fadeInRight {
+  0% {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.fadeInRight-animation {
+  animation: 1.5s fadeInRight;
+}
+
+
+
       /* On small screens, set height to 'auto' for sidenav and grid */
       @media screen and (max-width: 767px) {
         .sidenav {
@@ -79,11 +141,12 @@
     </style>
   </head>
   <body>
-    <div class="d-flex align-items-center" style="max-height: 10px;">
+    
+    <div class="d-flex vertical-center">
       <div class="container">
         <div class="row content">
           <div class="col-md-5">
-            <div class="media">
+            <div class="media fadeInLeft-animation">
               <div class="media-center">
                 <img
                   src="Images/pfp.png"
@@ -95,9 +158,9 @@
             </div>
           </div>
 
-          <div class="col-sm-7">
-            <h1 id="main-title" class="text-center main-title">Voscal</h1>
-            <div id="main-text" style="max-width:fit-content; height: 370px; overflow-y: scroll;">
+          <div class="col-sm-7 ">
+            <h1 id="main-title" class="text-center main-title fadeInRight-animation">Voscal</h1>
+            <div id="main-text" class="fadeInRight-animation"style="max-width:fit-content; height: 370px; overflow-y: scroll;">
               Hi! Thomas here, just letting you know this web site is still very much a work in progress! i've still got to add all my projects and demos, after that i'll style the website some more. it should be update with most of my projects around friday 6:40pm! but you can still find a few of my projects on github: github.com/voscal. Thank you for you patience! (8/08/2024)
               
             </div>
@@ -105,12 +168,13 @@
         </div>
       </div>
 
-      <footer class="container" style="margin-top: 20px">
+      <footer class="container fadeInUp-animation" style="margin-top: 20px">
         <div class="horizontal-scrollable">
           <div class="row text-center buttons"></div>
         </div>
       </footer>
     </div>
+  
   </body>
   <script src="main.js"></script>
 </html>
